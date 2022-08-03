@@ -19,7 +19,7 @@ contract FunctionOutputs {
         (uint256 u, bool b) = FunctionWithNamedAssignedOutPut();
         //assigning the values of the destructured function to new variables and
         //returning them shorthand
-        _u = u;
-        _b = b;
+        _u = u; //10
+        _b = b; //true
     }
 }
