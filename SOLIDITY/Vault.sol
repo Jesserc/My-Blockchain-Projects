@@ -10,7 +10,7 @@ contract Vault {
     //amount of ethers in the smart contract
 
     //*********** state variables ********/
-    //epoch time for testing = 1659657060
+//epoch time for testing = 1659657060
     address public owner;
     uint256 ID = 1;
     uint256[] id;
@@ -56,6 +56,8 @@ contract Vault {
         return _id;
     }
 
+    
+
     //function to withdraw a specific amount a grant beneficiary has for a particular grant, can only be called by the beneficiary if it exits
     function withDrawAmount(uint256 _id, uint256 _amountToWithdraw)
         external
@@ -82,7 +84,10 @@ contract Vault {
             BP.amountAllocated = 0;
             payable(user).transfer(_amount);
         }
+        
     }
+
+ 
 
     //function to withdraw/revert grant of a particular grant beneficiary, can only be called by owner of contract
     function RevertGrant(uint256 _id) external onlyOwner {
