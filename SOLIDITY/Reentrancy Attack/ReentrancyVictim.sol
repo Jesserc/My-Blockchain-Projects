@@ -13,8 +13,12 @@ contract ReentrancyVictim{
     function withdraw() external{                                                                                                            
         uint bal = balances[msg.sender];
         require(bal >= 0,"no balance for you");
-        payable(msg.sender).transfer(bal);
+        // reentrancy works mostly when using the call method instead of transfer
+        (bool success,) = (msg.sender).call{value:bal}("");
+        //balance of caller is being updated at the end of function call
+        //thus making it possible to re-enter the function call
         balances[msg.sender] = 0;
+     
     }
 
     function getBalance() public view returns(uint256 bal){
