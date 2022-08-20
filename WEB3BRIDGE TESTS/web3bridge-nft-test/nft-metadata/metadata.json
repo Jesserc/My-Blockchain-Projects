@@ -1,0 +1,24 @@
+{
+  "description": "This NFT is a prove that i completed my web3bridge test and created an ERC721 token with ipfs",
+  "external_url": "https://twitter.com/Jesserc_",
+  "image": "https://ipfs.filebase.io/ipfs/Qmb9aDQ6hbnyc38oVfkeWnFJEYQXBaqe2ZdVUNCPig5cyk",
+  "name": "Jesserc",
+  "attributes": [
+    {
+      "trait_type": "Gender",
+      "value": "Male"
+    },
+    {
+      "trait_type": "Cause",
+      "value": "Web3bridge Test"
+    },
+    {
+      "trait_type": "Token Standard",
+      "value": "ERC721"
+    },
+    {
+      "trait_type": "Date",
+      "value": "19th August 2022"
+    }
+  ]
+}
