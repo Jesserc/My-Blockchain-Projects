@@ -1,4 +1,7 @@
-# WEB3BRIDGE-COHORTVII
+# Blockchain & Smart Contract
+###### WEB3BRIDGE-COHORTVII
+###### SELF DEVELOPMENT
+
 - Ethereum
 - Solidity
 - Foundry
